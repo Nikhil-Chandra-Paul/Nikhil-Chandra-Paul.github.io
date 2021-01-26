@@ -1,4 +1,4 @@
-(function($) {
+$(window).bind("load", (function($) {
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
@@ -82,4 +82,4 @@
     filter();
   });
 
-})(jQuery);
+})(jQuery));
