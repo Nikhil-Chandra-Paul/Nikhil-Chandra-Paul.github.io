@@ -1,4 +1,4 @@
-$(window).bind("load", (function($) {
+$(window).load((function($) {
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
@@ -65,7 +65,7 @@ $(window).bind("load", (function($) {
     //   layoutMode: "masonry"
     // });
 
-    $(window).bind("load", function () {
+    $(window).load(function () {
 
       // Run Masonry ( isotope )
       $isotope.isotope({
