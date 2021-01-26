@@ -65,6 +65,19 @@
       layoutMode: "masonry"
     });
 
+    $(window).bind("load", function () {
+
+      // Run Masonry ( isotope )
+      $isotope.isotope({
+          itemSelector: '.item',
+          layoutMode: 'masonry',
+          stamp: '.item--static',
+          percentPosition: true,
+          resizesContainer: true,
+          resizable: true,
+      });
+  });
+
     $(this).on("change", filter);
     filter();
   });
